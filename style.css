@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --main-background:#404fed;
+    --header-font: 'Bakbak One', cursive;
+    --font-1:'Noto Sans', sans-serif;
+    --font-2:'Roboto', sans-serif;
+    --font-black:#23272a;
+    --font-whitney:'Whitney',sans-serif;
+    --font-whitney-light:'Whitney Light', sans-serif;
+    --font-whitney-book: 'Whitney Book', sans-serif;
+    --font-whitney-semibold: 'Whitney Semibold', sans-serif;
+
+}
+
+/* utility class */
+
+.container{
+    max-width: 1075px;
+    margin-inline: auto;
+}
+.space{
+    justify-content: space-between;
+
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+h1{
+    color: var(--font-black);
+}
+
+
+
+/* navbar */
+nav{
+    background-color: var(--main-background);
+    padding: 20px;
+}
+.company-logo img{
+    width: 7em;
+}
+
+
+.nav-link {
+    gap:40px;
+}
+.nav-link a{
+    font-family:var(--font-1);
+    font-weight: 700;
+    font-size: .8em;
+    color: white;
+}
+.nav-link a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+.open-discord a{
+    font-family: var(--font-2);
+    color: var(--font-black) ;
+    background-color: white;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.open-discord:hover{
+box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+
+}
+
+
+
+/* header section  */
+header{
+    background-color: var(--main-background);
+
+}
+.bg-img{
+
+    background: url("./discord image data/hero-bg.jpg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.header-heading{
+padding-top: 5rem;
+flex-direction: column;
+width: 55.8%;
+gap: 1.2rem;
+
+}
+.header-heading h1{
+    text-align: center;
+    color: white;
+    font-family: var(--header-font);
+    font-size: 4.5rem;
+    transform:scaleY(.8)
+}
+.header-heading h3{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    line-height: 1.6em;
+    text-align-last: center;
+}
+.last-btn {
+    justify-content: center;
+    gap: 30px;
+    padding-top: 2rem;
+}
+.left-btn{
+ background-color: white;   
+ padding: 20px;
+ border-radius: 50px;
+ color: var(--font-black);
+    font-size: 18px;
+
+}
+.right-btn{
+    background-color: #23272a;
+    padding: 20px;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+
+}
+.left-btn:hover{
+box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+}
+.right-btn:hover{
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+}
+
+
+
+/* section 1 */
+
+.section-1{
+    margin: 7rem 0 5rem;
+}
+.sec1-gap{
+    gap: 6rem;
+}
+.img img{
+    width: 38em;
+}
+.sec1-right-side{
+    flex-direction: column;
+    gap: 30px;
+
+}
+.sec1-right-side h1{
+    font-family: var(--font-2);
+    font-size: 2.8em;
+    font-weight: 900;
+    color: var(--font-black);
+}
+.sec1-right-side h3{
+    font-weight: 300;
+    font-family: var(--font-2);
+    line-height: 1.5em;
+}
+
+/* section 2  */
+.section-2{
+    background-color: rgba(239, 237, 237, 0.465);
+    padding:7rem 0 7rem ;
+
+}
+.row-reverse{
+flex-direction: row-reverse;
+}
+
+
+/* section 3 */
+
+.section-3{
+    margin:7rem 0 7rem;
+}
+
+/* section 4 */
+
+.section-4{
+    background-color:  rgba(239, 237, 237, 0.465);
+    padding:6rem 0 6rem ;
+
+}
+.top-text{
+    flex-direction: column;
+    text-align-last: center;
+    gap: 20px;
+}
+.top-text h1{
+     text-align: center;
+    color: var(--font-black);
+    font-family: var(--header-font);
+    font-size: 3.2rem;
+    transform:scaleY(.8)
+}
+.top-text h3{
+    padding: 0 6.3rem 0;
+     font-weight: 300;
+    font-family: var(--font-2);
+    line-height: 1.5em;
+}
+.direction{
+    flex-direction: column;
+}
+
+.section-4-img img{
+    width:69em;
+    
+}
+
+.bottom-txt-btn{
+    flex-direction: column;
+    font-family: var(--font-2);
+    
+    
+}
+.bottom-txt-btn h2{
+    background: url('./discord\ image\ data/asset 7.svg');
+    padding: 0px 40px 20px;
+    background-repeat: no-repeat;
+    font-size: 2rem;
+}
+.bottom-txt-btn a{
+    background-color: var(--main-background) !important;
+    color: white;
+}
+
+
+/* footer  */
+
+footer{
+    background-color: var(--font-black);
+    padding: 7rem 0 7rem;
+}
+.parts{
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-background);
+    padding-bottom: 30px;
+}
+.part1{
+    align-items:flex-start;
+    flex-direction: column;
+    max-width: 30%;
+    line-height: 35px;
+    gap:30px ;
+}
+.part1 h1{
+    color:var(--main-background);
+    font-family: var(--header-font);
+    font-size: 2.5rem;
+    transform: scaleY(1);
+}
+.part1 ul{
+    gap:20px
+}
+
+
+.products li{
+    margin-bottom: .6rem;
+}
+.product{
+    font-family: var(--font-1);
+    color: var(--main-background);
+    font-size: 15px;
+}
+.list a{
+    font-family: var(--font-1);
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+}
+
+.underline a{
+    text-decoration: underline;
+    text-decoration-color: #404fed;
+}
+.hover-cursor li img:hover{
+    cursor: pointer;
+}
+
+.sub-footer{
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.sub-footer a{
+    font-family: var(--font-2);
+    color: var(--font-black) ;
+    background-color: var(--main-background);
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 20px;
+}
